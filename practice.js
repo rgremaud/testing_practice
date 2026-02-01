@@ -3,7 +3,10 @@
 // so you will need to set up Babel for Jest ESM/CJS conversion.
 
 // A capitalize function that takes a string and returns it with the first character capitalized.
-export function capitalize() {}
+export function capitalize(string) {
+    const newString = string.charAt(0).toUpperCase() + string.slice(1);
+    return newString
+}
 
 // A reverseString function that takes a string and returns it reversed.
 
