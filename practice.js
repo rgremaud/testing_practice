@@ -1,7 +1,3 @@
-// Write tests for the following, and then make the tests pass!
-// Remember that Jest does not have built-in stable support for ESM,
-// so you will need to set up Babel for Jest ESM/CJS conversion.
-
 // A capitalize function that takes a string and returns it with the first character capitalized.
 export function capitalize(string) {
     const newString = string.charAt(0).toUpperCase() + string.slice(1);
@@ -9,6 +5,13 @@ export function capitalize(string) {
 }
 
 // A reverseString function that takes a string and returns it reversed.
+
+export function reverseString(string) { 
+    if (string === "") { return "";
+    } else {  
+    return reverseString(string.substr(1)) + string.charAt(0); 
+    }
+}
 
 // A calculator object that contains functions for the basic operations:
 // add, subtract, divide, and multiply. Each of these functions should
