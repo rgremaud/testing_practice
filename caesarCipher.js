@@ -1,6 +1,9 @@
 // A caesarCipher function that takes a string and a shift factor
 // and returns it with each character “shifted”. Read more about how a Caesar cipher works.
-
+export function caesarCipher(string, shift) {
+    // define alphabet
+    return "abc";
+}
 // Don’t forget to test wrapping from z to a. For example, caesarCipher('xyz', 3) should return 'abc'.
 
 // Don’t forget to test case preservation. The shifted lettercase should follow the original lettercase.
