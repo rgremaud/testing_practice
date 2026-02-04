@@ -1,1 +1,10 @@
-// An analyzeArray function that takes an array of numbers and returns an object with the following properties: average, min, max, and length.
+export function analyzeArray(array) {
+    const values = {
+        "average": (array.reduce((prev, cur) => prev + cur, 0))/array.length,
+        "min": Math.min(...array),
+        "max": Math.max(...array),
+        "length": array.length,
+    }
+
+    return values
+}

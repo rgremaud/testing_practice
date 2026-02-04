@@ -1,6 +1,6 @@
 import { caesarCipher } from "./caesarCipher"
 
-test("String Test", () => {
+test("Caesar Cipher", () => {
   const string = caesarCipher('xyz', 3);
   const stringTwo = caesarCipher('x y z', 3);
   const stringThree = caesarCipher("xy z!", 3);
